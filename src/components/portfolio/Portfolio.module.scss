@@ -1,0 +1,15 @@
+.portfolio {
+	.title {
+		font-size: 2rem;
+		text-transform: uppercase;
+	}
+
+	.list {
+		list-style-type: none;
+		max-width: 960px;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+}

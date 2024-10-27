@@ -1,0 +1,71 @@
+.rootContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	transition: opacity 0.15s ease-out;
+
+	&:hover {
+		opacity: 0.75;
+	}
+
+	.top {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+
+		.title {
+			color: #fff;
+			letter-spacing: 1;
+		}
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			gap: 0.25rem;
+
+			.date {
+				font-size: 1rem;
+				font-weight: 300;
+			}
+
+			.techList {
+				list-style: none;
+				display: flex;
+				gap: 0.5rem;
+
+				li {
+					background-color: #fff;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 0.25rem;
+					padding: 0.125rem;
+					box-shadow: 0 0 0.125rem 0 rgba(0, 0, 0, 0.5);
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	.demo {
+		width: 100%;
+		aspect-ratio: 1915/915;
+		position: relative;
+		box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.5);
+
+		background-image: url("/assets/images/placeholder.png");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.description {
+		text-align: center;
+		font-weight: 200;
+	}
+}

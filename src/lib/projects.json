@@ -1,0 +1,59 @@
+{
+	"projects": [
+		{
+			"name": "Lyriquiz",
+			"description": "Blind-test musical dans lequel des paroles défilent. Il faut trouver l'artiste et le nom de la chanson.",
+			"date": {
+				"start": "2023",
+				"end": "2024"
+			},
+			"stack": ["next.js", "express.js", "mongoDB"],
+			"href": "https://lyriquiz.com",
+            "order": 2
+		},
+		{
+			"name": "Pigney",
+			"description": "App de gestion de budgets.",
+			"date": {
+				"start": "2023",
+				"end": "current"
+			},
+			"stack": ["vue.js", "express.js", "mongoDB"],
+			"href": "#",
+            "order": 1
+		},
+		{
+			"name": "MyJap",
+			"description": "Plateforme d'apprentissage du japonais. Leçons et quiz interractifs.",
+			"date": {
+				"start": "2022",
+				"end": "standby"
+			},
+			"stack": ["next.js", "symfony", "SQL"],
+			"href": "https://myjap.jaurisolivo.fr",
+            "order": 3
+		},
+		{
+			"name": "12words",
+			"description": "Plateforme d'écriture, d'échange et de planification de projets.",
+			"date": {
+				"start": "soon",
+				"end": ""
+			},
+			"stack": ["next.js", "SQL"],
+			"href": "#",
+            "order": 5
+		},
+		{
+			"name": "Hemophelia",
+			"description": "Site e-commerce pour autrice indépendante.",
+			"date": {
+				"start": "2020",
+				"end": "2020"
+			},
+			"stack": ["wordpress", "SQL"],
+			"href": "https://hemophelia.justine-savy.fr",
+            "order": 4
+		}
+	]
+}

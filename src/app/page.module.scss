@@ -1,0 +1,29 @@
+@use "variables";
+
+.page {
+	background-color: variables.$backgroundColor;
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+
+		section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+		}
+
+		.hr {
+			all: unset;
+			height: 1px;
+			width: 24rem;
+
+			box-shadow: 0 0.25rem 0.25rem 0 #c1c1c1;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.25rem;
+
+	.link {
+		overflow: hidden;
+		border-radius: 50%;
+		aspect-ratio: 1;
+		&:hover {
+			opacity: 0.5;
+
+			& ~ .label {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.label {
+		color: #e0e0e0;
+		font-weight: 200;
+		font-size: 0.75rem;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}

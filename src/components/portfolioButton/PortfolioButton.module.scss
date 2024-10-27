@@ -1,0 +1,72 @@
+.btnContainer {
+	--offset: 0.125rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 1rem;
+	margin: 2rem;
+
+	transition: all 0.75s ease;
+
+	&:hover {
+		background-color: #fc852a;
+		transform: scale(1.125);
+
+		&::before {
+			background: conic-gradient(transparent 90deg, #fff, transparent);
+		}
+
+		& > .btn {
+			color: #fff;
+		}
+	}
+
+	&::before {
+		content: "";
+		background: conic-gradient(transparent 90deg, #fc852a, transparent);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		aspect-ratio: 1;
+		width: 100%;
+
+		animation: rotate 2s linear infinite;
+	}
+
+	&::after {
+		content: "";
+		background: inherit;
+		border-radius: inherit;
+		position: absolute;
+		inset: var(--offset);
+		height: calc(100% - 2 * var(--offet));
+		width: calc(100% - 2 * var(--offet));
+	}
+
+	.btn {
+		background-color: transparent;
+		padding: 0.5rem 1.5rem;
+
+		color: #313131;
+
+		position: relative;
+		z-index: 10;
+
+		transition: all 0.75s ease;
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+	}
+	to {
+		transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+	}
+}

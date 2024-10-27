@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+	reactStrictMode: true,
+
+	sassOptions: {
+		includePaths: ["./src/styles"],
+		implementation: "dart-sass",
+	},
+};
 
 export default nextConfig;
