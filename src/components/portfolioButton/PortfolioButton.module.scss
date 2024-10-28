@@ -11,6 +11,17 @@
 	border-radius: 1rem;
 	margin: 2rem;
 
+	@media (max-width: 390) {
+		& {
+			margin: 1rem 0rem;
+		}
+	}
+	@media (max-width: 640) {
+		& {
+			margin: .5rem 0rem;
+		}
+	}
+
 	transition: all 0.75s ease;
 
 	&:hover {
