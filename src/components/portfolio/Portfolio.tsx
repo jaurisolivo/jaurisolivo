@@ -23,10 +23,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-export const revalidate = 60;
-export async function generateStatic() {
-	// const project = projectsList.projects.find((p) => p.name.toLocaleLowerCase() === "lyriquiz");
-
-	return ["a"]
-}
