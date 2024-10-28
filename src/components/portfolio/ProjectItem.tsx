@@ -61,10 +61,10 @@ const ProjectItem = (props: Props) => {
 				</div>
 				<div className={styles.demo}>
 					<Image
-						src={`/assets/images/projects/${props.name}.jpg`}
+						src={`/assets/images/projects/${props.name.toLowerCase()}.jpg`}
 						alt={props.name}
 						fill
-                        sizes="320px"
+						sizes="320px"
 						priority
 						className={styles.screen}
 					/>
