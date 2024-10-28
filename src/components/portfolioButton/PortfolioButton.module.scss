@@ -18,7 +18,7 @@
 	}
 	@media (max-width: 640px) {
 		& {
-			margin: .5rem 0rem;
+			margin: 0.5rem 0rem;
 		}
 	}
 
@@ -34,6 +34,10 @@
 
 		& > .btn {
 			color: #fff;
+
+			& > img {
+				filter: invert(100%);
+			}
 		}
 	}
 
@@ -61,15 +65,28 @@
 	}
 
 	.btn {
+		color: #313131;
 		background-color: transparent;
 		padding: 0.5rem 1.5rem;
 
-		color: #313131;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
 
 		position: relative;
 		z-index: 10;
 
-		transition: all 0.75s ease;
+		transition: color 0.25s ease;
+
+		& > * {
+			display: block;
+			padding: 0;
+		}
+
+        & > img {
+            transition: filter 0.75s ease;
+        }
 	}
 }
 
