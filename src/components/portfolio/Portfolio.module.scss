@@ -3,7 +3,7 @@
 		font-size: 2rem;
 		text-transform: uppercase;
 
-		@media (max-width: 390) {
+		@media (max-width: 390px) {
 			& {
 				font-size: 1.5rem;
 			}
@@ -26,7 +26,7 @@
 				
 			}
 		}
-		@media (max-width: 640) {
+		@media (max-width: 640px) {
 			& {
 				grid-template-columns: repeat(1, 1fr);
 				

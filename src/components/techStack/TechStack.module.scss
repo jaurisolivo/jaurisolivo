@@ -11,13 +11,13 @@
 		gap: 1rem;
 		list-style-type: none;
 
-		@media (max-width: 390) {
+		@media (max-width: 390px) {
 			& {
 				grid-template-columns: repeat(3, 1fr);
                 gap: .5rem;
 			}
 		}
-		@media (max-width: 640) {
+		@media (max-width: 640px) {
 			& {
 				grid-template-columns: repeat(3, 1fr);
                 gap: .5rem;

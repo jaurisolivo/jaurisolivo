@@ -10,7 +10,7 @@
 		align-items: center;
 		gap: 2rem;
 
-		@media (max-width: 390) {
+		@media (max-width: 390px) {
 			& {
 				gap: 1rem;
 			}
@@ -23,7 +23,7 @@
 			align-items: center;
 			gap: 2rem;
 
-			@media (max-width: 390) {
+			@media (max-width: 390px) {
 				& {
 					gap: 1rem;
 				}
@@ -35,7 +35,7 @@
 			height: 1px;
 			width: 24rem;
 
-            @media (max-width: 390) {
+            @media (max-width: 390px) {
 			
                 & {
                     width: 90%
